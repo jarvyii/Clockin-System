@@ -1,0 +1,92 @@
+body {
+  /*  background-image: url("../img/clockgreen.png");
+    background-repeat:round;*/
+    background-color:lightblue;
+  }
+
+.main-nav li{
+	text-align: center;
+	color: blue;
+	background: #fff;
+}
+/* Small media movil */
+@media ( min-width:358px ){
+  .jumbotron {
+    display:none;
+  }
+  #searchPeriod{
+    width:30%;
+  }
+}
+#about {
+  display: none;
+  width:60%;
+	margin-left:15%;
+}
+.bold-text {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#button-main {
+  margin-top:1em;
+}
+//  from the SaSS Classes
+// ======================================
+//  Image Styles
+// ======================================
+
+.img-featured {
+  width: 165px;
+  border: 4px solid $white;
+  border-radius: 50%;
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+  @media (max-width: $break-xs) {
+    //display: none;
+  }
+}
+
+
+
+/* Small media movil */
+@media ( min-width:576px ){
+  #searchPeriod{
+    width:30%;
+  }
+/* ++++++++++++++++++++++++++++++++++++++++++
+   Media Queries
+++++++++++++++++++++++++++++++++++++++++++++*/
+/* Layout  for 3 columns and 3 Rows in case of medium screen */
+@media ( min-width: 769px ) {
+ .jumbotron {
+    display:flex;
+    height: 100px;
+  }
+  #jumboh6 {
+    margin-top: 0px;
+  }
+	.wrap {
+		min-height:calc( 100vh - 89px);
+	}
+  	.col {
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+		padding-left: 1em;
+		padding-right:1em;
+		width: 50%;
+		float: left;
+	}
+  #searchPeriod{
+    width:30%;
+  }
+}
+
+/* Layout  for 9 columns in case of big screen */
+
+@media (min-width:1025px) {
+  #searchPeriod{
+    width:50%;
+  }
+}

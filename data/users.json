@@ -1,0 +1,16 @@
+[
+  {
+   "iduser":"001",
+   "user": "jr@ts.com",
+   "firstname": "Joseph",
+   "lastname": "Reynold",
+   "password":"123"
+  },
+  {
+   "iduser":"002",
+   "user": "av@ts.com",
+   "firstname": "Andrew",
+   "lastname": "Vazq",
+   "password":"123"
+  }
+]

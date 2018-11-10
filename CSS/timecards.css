@@ -3,7 +3,9 @@ body {
     background-repeat:round;*/
     background-color:lightblue;
   }
-
+.description {
+  border-style: none;
+}
 .main-nav li{
 	text-align: center;
 	color: blue;
@@ -88,5 +90,8 @@ body {
 @media (min-width:1025px) {
   #searchPeriod{
     width:50%;
+  }
+  .description {
+    border-style: none;
   }
 }

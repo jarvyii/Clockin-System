@@ -144,7 +144,7 @@ function setTimesheetHead(){
                   //document.getElementById("user-nav").innerHTML= User.firstname+" "+User.lastname;
                   document.getElementById("idUser").value = User.iduser;
                   writeName(User.firstname, User.lastname );// write in the Timesheet form
-                  menueHome();
+                //  menueHome();
                   return false;
                 }
               })
@@ -166,6 +166,10 @@ $('#buttonlogin').click(function () {//function validate() {
           alert("Please enter the password.");
           return false;
       }
+    document.getElementById("jumbotron").style.display = "block";
+    document.getElementById("timesheet").style.display = "block";
+    document.getElementById("loginform").style.display = "none"; 
+    menueHome();
     getUser(username, password);
     setTimesheetHead(); // Set info about the company in the file data/setup.json
     setTSPeriod(); //Set the info about the beginning and end of the period
@@ -284,12 +288,14 @@ function menueAbout() {
   FUNCTION menueHome()
 **********************************************************************/
 function menueHome() {
-     document.getElementById("about").style.display = "none";
+  document.getElementById("main").style.display = "block";
+  document.getElementById("about").style.display = "none";
+  /*   document.getElementById("about").style.display = "none";
      //document.getElementById("loginform").style.display = "none";
      //document.getElementById("timesheet").style.display = "none";
      document.getElementById("jumbotron").style.display = "block";
      document.getElementById("timesheet").style.display = "block";
-     document.getElementById("loginform").style.display = "none";
+     document.getElementById("loginform").style.display = "none"; */
      return false;
 } // \  FUNCTION menueHome()
 /************************************************************************

@@ -49,6 +49,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">to Search</button>
           </form>
     </nav>
+    <!--  It include the Jumbotron, Login Form and the tiemesheet Form-->
     <main id="main" role="main">
       <div id="bar-jumbotron"></div>
       <!-- Main jumbotron for a  marketing message about the system-->
@@ -61,6 +62,7 @@
             </div>  <!-- /Row -->
         </div> <!-- /Container -->
       </div> <!-- /jumbotron -->
+      <!-- Login form. It validate the User and password with the file USERS.JSON -->
       <form id="loginform" method="post" runat="server">
             <div class="imgcontainer">
               <img src="img\login.jpg" alt="Login now" class="avatar">
@@ -85,14 +87,15 @@
               <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
       </form>
-
       <!-- Body -->
+      <!-- Timesheet form to update the worked hour-->
       <div id="timesheet" class="container text-center">
           <form>
+             <!--Hide field to be use in others area of the web -->
              <input type="hidden" id = "idUser" name="idUser">
              <input type="hidden" id = "idPeriod" name="idPeriod">
              <input type="hidden" id = "activePeriod" name="activePeriod">
-            <!-- Example row of columns -->
+            <!-- The head of the timesheet -->
               <div class="row">
                 <div class="col-md-4">
                   <h4 id="fullname"><span class="headlabel">Name:</span> </h4>
@@ -105,6 +108,8 @@
                 </div>
               </div>
               <hr>
+              <!-- The squeleton of the Timesheet. It is created with JavaScript function -->
+              <!-- I use the form of a Matrix 5x8 to work with it.  -->
              <div class="row bg-success">
                <div class="col-md-4">
                  <div class="row">

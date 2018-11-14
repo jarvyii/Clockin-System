@@ -2,20 +2,55 @@
   {
     "iduser" :  "001",
     "idperiod":"18001",
-    "timesheet":{ "Data11": "1", "Data12": "2", "Data13": "3","Data14": "4","Data15": "5","Data16":"6","Data17":"7",
-                  "Data21": "1", "Data22": "2", "Data23": "3","Data24": "4","Data25": "5","Data26":"6","Data27":"7",
-                  "Data31": "1", "Data32": "2", "Data33": "3","Data34": "4","Data35": "5","Data36":"6","Data37":"7",
-                  "Data41": "1", "Data42": "2", "Data43": "3","Data44": "4","Data45": "5","Data46":"6","Data47":"7"
+    "timesheet":{ "Data11": "4", "Data12": "7", "Data13": "4","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
                 }
-
+  },
+  {
+    "iduser": "001",
+    "idperiod": "18002",
+    "timesheet": { "Data11": "4", "Data12": "4", "Data13": "7","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
+                }
+  },
+  {
+    "iduser": "001",
+    "idperiod": "18003",
+    "timesheet": { "Data11": "4", "Data12": "5", "Data13": "7","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
+                }
+  },
+  {
+    "iduser": "002",
+    "idperiod": "18001",
+    "timesheet": { "Data11": "4", "Data12": "2", "Data13": "7","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
+                }
   },
   {
     "iduser": "002",
     "idperiod": "18002",
-    "timesheet": { "Data11": "1", "Data12": "2", "Data13": "3","Data14": "4","Data15": "5","Data16":"6","Data17":"7",
-                  "Data21": "1", "Data22": "2", "Data23": "3","Data24": "4","Data25": "5","Data26":"6","Data27":"7",
-                  "Data31": "1", "Data32": "2", "Data33": "3","Data34": "4","Data35": "5","Data36":"6","Data37":"7",
-                  "Data41": "1", "Data42": "2", "Data43": "3","Data44": "4","Data45": "5","Data46":"6","Data47":"7"
+    "timesheet": { "Data11": "6", "Data12": "8", "Data13": "7","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
+                }
+  },
+  {
+    "iduser": "002",
+    "idperiod": "18003",
+    "timesheet": { "Data11": "4", "Data12": "8", "Data13": "7","Data14": "6","Data15": "8","Data16":"0","Data17":"0",
+                  "Data21": "1", "Data22": "0", "Data23": "1","Data24": "0","Data25": "0","Data26":"0","Data27":"0",
+                  "Data31": "1", "Data32": "0", "Data33": "0","Data34": "1","Data35": "0","Data36":"0","Data37":"0",
+                  "Data41": "1", "Data42": "0", "Data43": "0","Data44": "1","Data45": "0","Data46":"0","Data47":"0"
                 }
   }
 ]

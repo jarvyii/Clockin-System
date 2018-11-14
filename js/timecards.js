@@ -42,7 +42,7 @@ function setTSInfo(){
       var activeUser = document.getElementById("idUser").value;
       var activePeriod = document.getElementById("idPeriod").value;
       $.each(data,function(i, Timecard) {
-        if ( (activePeriod == Timecard.idperiod) &&  (activeUser == Timecard.iduser))  {
+        if ( (activePeriod === Timecard.idperiod) &&  (activeUser === Timecard.iduser))  {
            writeDays(Timecard.timesheet);
            tsFlag = true;
            return false;
@@ -76,8 +76,8 @@ function setTSPeriod(){
     function getPeriod(data) {
           var PeriodFlag = false;
           $.each(data,function(i, Period) {
-           if ( document.getElementById("idPeriod").value == Period.idperiod) {
-              document.getElementById("period").innerHTML += Period.from + " to "+Period.to;
+           if ( document.getElementById("idPeriod").value === Period.idperiod) {
+              document.getElementById("period").innerHTML += Period.from + "<span class='headlabel'> To </span>"+Period.to;
               document.getElementById("activePeriod").value = Period.active;
               PeriodFlag = true;
               return false;
@@ -112,6 +112,7 @@ function setTimesheetHead(){
 
                 document.getElementById("user-nav").innerHTML=Setup.Company;
                 document.getElementById("user-nav").href= Setup.Web;
+                document.getElementById("image-exit-nav").src= "img/exit.png";
                 document.getElementById("idPeriod").value = Setup.activePeriod;
                 //alert(document.getElementById("idPeriod").value);
                 return false;
@@ -152,6 +153,37 @@ function setTimesheetHead(){
         $.getJSON(jsonURL, usersFormat, checkUser );
         return false;
     }   // \FUNCTION  getUser()
+/************************************************************************
+Submit the INFO of the week, afetr this the employee can't do any change.
+*************************************************************************/
+$('#submmit').click(function () {
+  alert("Sorry, this Option is under construction.");
+}); // /$('#submmit').click(function ())
+/**************************************************************************
+ Save all INFO to the Database, the employee can continue working on it later.
+**************************************************************************/
+$('#save').click(function () {
+  alert("Sorry, this Option is under construction.");
+}); // /$('#save').click(function ());
+/***************************************************************************
+Delete all new introduce worked hour and restore it with the value in the Database.
+****************************************************************************/
+$('#restore').click(function () {
+  alert("Sorry, this Option is under construction.");
+}); // /$('#restore').click(function ())
+/**************************************************************************
+ Print the info of the wek in a  official form.
+***************************************************************************/
+$('#print').click(function () {
+  alert("Sorry, this Option is under construction.");
+}); // /$('#print').click(function ())
+/*****************************************************************
+Delete the introduce iNFO in the Login Form
+*****************************************************************/
+$('#buttoncancel').click(function () {
+  document.getElementById("user-name").value="";
+  document.getElementById("user-password").value = "";
+}); // / $('#buttoncancel').click(function () in Loging)
 /**********************************************************************************
  Check valid the User and password introduced in Login Form. And setup all INFO in the System.
  FUNCTION  $('#buttonlogin').click(function ())
@@ -168,12 +200,15 @@ $('#buttonlogin').click(function () {//function validate() {
       }
     document.getElementById("jumbotron").style.display = "block";
     document.getElementById("timesheet").style.display = "block";
-    document.getElementById("loginform").style.display = "none"; 
+    document.getElementById("loginform").style.display = "none";
     menueHome();
     getUser(username, password);
     setTimesheetHead(); // Set info about the company in the file data/setup.json
     setTSPeriod(); //Set the info about the beginning and end of the period
     setTSInfo(); //Set the worked hour of the week in the Timesheet
+    document.getElementById("about-menu").addEventListener("click", menueAbout);
+    document.getElementById("home-menu").addEventListener("click", menueHome);
+    document.getElementById("search-form").style.display = "block";
   }); // \FUNCTION  $('#buttonlogin').click(function ())
 /*********************************************************************************
   FUNCTION writeName()
@@ -193,7 +228,7 @@ function writeDescription(){
         var p = document.createElement("INPUT");
             p.style.margin =0;
           //  p.border-style = none;
-            p.className="form-control description";
+            p.className="form-control description bg-success";
             p.setAttribute("type", "text");
             p.setAttribute("value", value);
           //  p.disabled = true;
@@ -203,7 +238,7 @@ function writeDescription(){
               p.innerHTML= value;
               document.getElementById("column-0").appendChild(p) */
         } // \FUNCTION addDescrption()
-     document.getElementById("column-0").innerHTML ="Description";
+     document.getElementById("column-0").innerHTML ="Payments";
      Description.forEach(addDescrption);
   } // \FUNCTION writeDescription()
 /*******************************************************************************
@@ -302,8 +337,9 @@ function menueHome() {
   Main Block
 ***********************************************************************/
 writeDescription();
-document.getElementById("about-menu").addEventListener("click", menueAbout);
-document.getElementById("home-menu").addEventListener("click", menueHome);
+/* document.getElementById("about-menu").addEventListener("click", menueAbout);
+document.getElementById("home-menu").addEventListener("click", menueHome); */
 document.getElementById("timesheet").style.display = "none";
 document.getElementById("loginform").style.display = "block";
+document.getElementById("search-form").style.display = "none";
 }); // end ready

@@ -3,23 +3,49 @@ body {
     background-repeat:round;*/
     background-color:lightblue;
   }
-.description {
-  border-style: none;
+#user-nav {
+  color:#800000;
+  font-weight: bold;
+}
+.headlabel {
+  color:#00004d;
+}
+.navbar-color{
+    background-color: #00004d;
 }
 .main-nav li{
 	text-align: center;
 	color: blue;
 	background: #fff;
 }
+#bars-about {
+  height: 90px;
+}
 /* Small media movil */
 @media ( min-width:358px ){
   .jumbotron {
-    display:none;
+    height: 145px;
   }
   #searchPeriod{
     width:30%;
   }
+  #bars-about {
+    height: 145px;
+  }
+  #bar-jumbotron {
+    height:0px;
+  }
+  #jumboh6 {
+    font-size: 1em;
+  }
+  .img-jumbo{
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
+
 #about {
   display: none;
   width:60%;
@@ -56,19 +82,40 @@ body {
   #searchPeriod{
     width:30%;
   }
+  #bars-about {
+    height: 130px;
+  }
+  #bar-jumbotron {
+    height: 50px;
+  }
+  #jumboh6 {
+    font-size: 2.5em;
+  }
+  .img-jumbo{
+    width: 35px;
+    height: 35px;
+  }
+}
 /* ++++++++++++++++++++++++++++++++++++++++++
    Media Queries
 ++++++++++++++++++++++++++++++++++++++++++++*/
 /* Layout  for 3 columns and 3 Rows in case of medium screen */
-@media ( min-width: 769px ) {
- .jumbotron {
-    display:flex;
-    height: 100px;
+@media ( min-width: 768px ) {
+  #bars-about {
+    height: 110px;
+  }
+  #bar-jumbotron {
+    height: 30px;
   }
   #jumboh6 {
-    margin-top: 0px;
+    font-size: 2.5em;
   }
-	.wrap {
+  .img-jumbo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .wrap {
 		min-height:calc( 100vh - 89px);
 	}
   	.col {
@@ -85,13 +132,20 @@ body {
   }
 }
 
+@media (min-width:992px) {
+  #bars-about {
+    height: 90px;
+  }
+  #bar-jumbotron {
+    height: 1px;
+  }
+
+}
+
 /* Layout  for 9 columns in case of big screen */
 
 @media (min-width:1025px) {
   #searchPeriod{
     width:50%;
-  }
-  .description {
-    border-style: none;
   }
 }

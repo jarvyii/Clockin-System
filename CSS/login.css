@@ -4,7 +4,7 @@
     width:50%;
     vertical-align: middle;
     margin-top: 40px;
-    margin-left: 20%;
+    margin-left: 25%;
     display: none;
 }
 /* Full-width inputs */
@@ -14,10 +14,14 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    width:60%;
 }
 input.description {
   border-style: none;
   padding: 0;
+  border-style: none;
+  font-weight: bold;
+  width: 100%;
 }
 .loginimput {
   margin-left: 20%;

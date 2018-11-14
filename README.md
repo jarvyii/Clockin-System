@@ -3,14 +3,18 @@ Jobsclocking System Version 1.0
 **************************************************************************************
 REQUIREMENTS
 
- -----> The WEB use JSON File store in the WEB Server.
+ -----> The WEB uses JSON Files store in a WEB Server.
   1)- WEB Server like Apache. In my case, I used NAMP and WAMP.
+  
   2)- An specific user to Login:
+  
       - User: jr@ts.com    Password: 123
+	  
 	    or
+		
 	  - User: av@ts.com    Password: 123
 	  
-	  You can create your own User and Password updating the JSON file:  users.json
+	  You can create your own User and Password updating the JSON file:  users.json	  
 *****************************************************************************************
 Description
 This is a dinamic WEB aplication. Its designed to be sale and use for different kind of Companies or individual person.
